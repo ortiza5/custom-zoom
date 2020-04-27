@@ -1,0 +1,17 @@
+{
+  "name": "Custom Zoom Increments",
+  "description": "Zoom in at custom increments",
+  "version": "0.1",
+  "manifest_version": 2,
+  "permissions": ["storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "options_page": "options.html",
+  "icons": {
+    "128": "img/icon-128.png",
+    "48": "img/icon-48.png",
+    "16": "img/icon-16.png"
+  }
+}
