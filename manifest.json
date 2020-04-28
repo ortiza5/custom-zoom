@@ -6,12 +6,29 @@
   "permissions": ["storage"],
   "background": {
     "scripts": ["background.js"],
-    "persistent": true
+    "persistent": false
   },
-  "options_page": "options.html",
-  "icons": {
-    "128": "img/icon-128.png",
-    "48": "img/icon-48.png",
-    "16": "img/icon-16.png"
+  "commands": {
+    "zoom-in": {
+      "suggested_key": {
+        "default": "Alt+8"
+      },
+      "description": "Zoom out by the specified increment",
+      "global": true
+    },
+    "zoom-out": {
+      "suggested_key": {
+        "default": "Alt+9"
+      },
+      "description": "Zoom in by the specified increment",
+      "global": true
+    },
+    "zoom-default": {
+      "suggested_key": {
+        "default": "Alt+0"
+      },
+      "description": "Zoom to the specified value",
+      "global": true
+    }
   }
 }
